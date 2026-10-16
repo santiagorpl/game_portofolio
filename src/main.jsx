@@ -5,7 +5,7 @@ import './index.css'
 import App from './App.jsx'
 import Admin from './Admin.jsx'
 
-const halaman = window.location.pathname
+const halaman = window.location.pathname.replace(/\/+$/, '') || '/'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
